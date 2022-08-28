@@ -1,0 +1,43 @@
+body {
+    position: relative;
+}
+
+#marquee {
+    display: flex;
+    position: fixed top;
+    flex-direction: row nowrap;
+    overflow: hidden;
+    width: 100vw;
+    justify-content: space-between;
+    background-color: black;
+    height: 5%;
+
+}
+
+#marqueeItem {
+    display: flex;
+    flex-direction: row nowrap;
+    padding: 2px 2rem;
+    color: white;
+    justify-content: center;
+    align-items: center;
+
+}
+ 
+#marqueeItem {
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-name: span;
+    transform: translateX(200vw);
+    animation: span 50s linear infinite;
+}
+
+@keyframes span {
+    0% {
+        -webkit-transform: translateX(100vw);
+    }
+
+    100% {
+        -webkit-transform: translateX(-160vw);
+    }
+}

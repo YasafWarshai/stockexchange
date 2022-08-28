@@ -1,0 +1,48 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    height: 100vh;
+}
+ 
+.company-display {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#title {
+    text-align: center;
+    justify-content: center;
+    padding: none;
+
+}
+
+#name,
+#symbol,
+#website {
+    margin: none;
+    padding: none;
+}
+
+canvas {
+    width: 60vw !important;
+    height: 40vh !important;
+}
+
+.chart {
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    height: 60px;
+    width: 60px;
+}
+
+#description {
+    width: 95vw;
+    padding: 0 4rem;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+}
